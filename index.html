@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <script src="_js/jquery-3.2.1.min.js"></script>
+    <script src="_js/script.js"></script>
+    <link rel="stylesheet" href="_css/style.css">
+  </head>
+  <body>
+    <button type="button" class="c-theme" id="light-button" onclick="setTheme('light')">Light Theme</button>
+	<button type="button" class="c-theme" id="red-button" onclick="setTheme('ruby')">Ruby Theme</button>
+    <button type="button" class="c-theme" id="golden-button" onclick="setTheme('golden')">Golden Theme</button>
+    <button type="button" class="c-theme" id="dark-button" onclick="setTheme('dark')">Dark Theme</button>
+    <div id="box-calc" class="box-shadow-light">
+      <div id="display">
+        <input type="text" disabled value="0" class="box-shadow-weight">
+      </div>
+      <div id="box-buttons">
+        <table id="table-buttons" cellspacing="5px">
+          <tr>
+            <td class="box-shadow-weight">7</td>
+            <td class="box-shadow-weight">8</td>
+            <td class="box-shadow-weight">9</td>
+            <td class="box-shadow-weight">/</td>
+            <td class="box-shadow-weight" title="Desfazer (Ctrl-Z)">&#8617;</td>
+            <td class="box-shadow-weight"><img src="_images/delete-black.png" class="image" title="Apagar (Backspace)"></td>
+          </tr>
+          <tr>
+            <td class="box-shadow-weight">4</td>
+            <td class="box-shadow-weight">5</td>
+            <td class="box-shadow-weight">6</td>
+            <td class="box-shadow-weight">&#10005;</td>
+            <td class="box-shadow-weight">(</td>
+            <td class="box-shadow-weight">)</td>
+          </tr>
+          <tr>
+            <td class="box-shadow-weight">1</td>
+            <td class="box-shadow-weight">2</td>
+            <td class="box-shadow-weight">3</td>
+            <td class="box-shadow-weight">&minus;</td>
+            <td class="box-shadow-weight"><i>x<sup>2</sup></i></td>
+            <td class="box-shadow-weight">&radic;</td>
+          </tr>
+          <tr>
+            <td class="box-shadow-weight">0</td>
+            <td class="box-shadow-weight">,</td>
+            <td class="box-shadow-weight">%</td>
+            <td class="box-shadow-weight">&plus;</td>
+            <td class="box-shadow-weight" colspan="2">=</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

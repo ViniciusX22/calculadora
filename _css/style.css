@@ -1,0 +1,115 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  transition-duration: 1.5s;
+}
+
+.c-theme {
+  border: none;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  font-size: 3vh;
+  font-family: Arial;
+  margin: 1vh;
+  cursor: pointer;
+  position: relative;
+}
+
+#light-button {
+  border-left-color: #f0f0f0;
+  border-bottom-color: grey;
+  background-color: white;
+  color: black;
+  float: left;
+}
+
+#light-button:active {
+  margin-top: 1.2vh;
+  border-width: 2px;
+  border-top-color: #f0f0f0;
+  border-right-color: grey;
+}
+
+#dark-button {
+  border-left-color: grey;
+  border-bottom-color: #101010;
+  background-color: black;
+  color: white;
+  float: right;
+}
+
+#dark-button:active {
+  margin-top: 1.2vh;
+  margin-right: 1.3vh;
+  border-width: 2px;
+  border-top-color: grey;
+  border-right-color: #101010;
+}
+
+.box-shadow-light {
+  box-shadow: -3px 3px 4px lightgrey, 3px -3px 4px lightgrey, 3px 3px 4px lightgrey, -3px -3px 4px lightgrey;
+}
+
+.box-shadow-dark {
+  box-shadow: -3px 3px 4px #101010, 3px -3px 4px #101010, 3px 3px 4px #101010, -3px -3px 4px #101010;
+}
+
+.box-shadow-red {
+  box-shadow: -3px 3px 4px red, 3px -3px 4px red, 3px 3px 4px red, -3px -3px 4px red;
+}
+
+.box-shadow-weight:hover {
+  box-shadow: -1px 1px 1px grey, 1px -1px 1px grey;
+}
+
+#table-buttons {
+  margin-top: 2vh;
+}
+
+#box-buttons, #display {
+  display: none;
+}
+
+#table-buttons td {
+  width: 20vw;
+  height: 2vh;
+  text-align: center;
+  font-size: 2.4vh;
+}
+
+.image {
+  width: 2vw;
+  height: 3vh;
+}
+
+#display {
+  width: 22vw;
+  height: 10vh;
+  margin-left: 0.5vw;
+  margin-top: 1vh;
+  transition-duration: 1.5s;
+}
+
+#display input, #table-buttons td {
+  cursor: pointer;
+}
+
+#display input {
+  height: inherit;
+  text-align: right;
+  width: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+#box-calc {
+  position: absolute;
+  top: 30vh;
+  left: 38vw;
+  width: 23vw;
+  height: 31vh;
+  transition-duration: 1.5s;
+}
